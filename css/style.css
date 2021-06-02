@@ -179,3 +179,7 @@ Dark green: #28b485
     animation: moveInBottom 0.2s ease-out 0.5s;
     animation-fill-mode: backwards;
   }
+  
+  .pukulo-tag{
+    font-size: 100px;
+  }
