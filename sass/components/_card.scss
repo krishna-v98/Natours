@@ -140,9 +140,23 @@
         }
       }
     }
+    &__difficulty {
+      padding: 0.8rem 1rem;
+      color: white;
+      border-radius: 0.5rem;
+      &--Easy {
+        background-color: $color-secondary-dark;
+      }
+      &--Medium {
+        background-color: $color-primary-dark;
+      }
+      &--Hard {
+        background-color: $color-tertiary-dark;
+      }
+    }
   }
 
-  
+  //--------------byakside--------------
 
   &__cta {
     position: absolute;

@@ -241,6 +241,16 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+    .card__details__difficulty {
+      padding: 0.8rem 1rem;
+      color: white;
+      border-radius: 0.5rem; }
+      .card__details__difficulty--Easy {
+        background-color: #ff7730; }
+      .card__details__difficulty--Medium {
+        background-color: #28b485; }
+      .card__details__difficulty--Hard {
+        background-color: #5643fa; }
   .card__cta {
     position: absolute;
     top: 50%;
