@@ -141,6 +141,8 @@
       }
     }
     &__difficulty {
+      display: inline-block;
+      width: 100%;
       padding: 0.8rem 1rem;
       color: white;
       border-radius: 0.5rem;

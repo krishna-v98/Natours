@@ -1,0 +1,69 @@
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background-color: rgba($color-black, 0.8);
+  border-radius: 0.3rem;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: $default-font-size;
+  transform: skewX(-12deg);
+
+  &__shape {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    overflow: hidden;
+  }
+
+  &__img {
+    border-radius: 50%;
+    height: 100%;
+    transition: transform 0.2s;
+    filter: blur(0) brightness(100%);
+    transform: translateX(-4rem) scale(1.3);
+  }
+
+  &__text {
+    transform: skewX(12deg);
+    color: $color-grey-light-1;
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.2s;
+    backface-visibility: hidden;
+  }
+
+  // ---------HOVER---------
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  &:hover &__img {
+    transform: translate(-4rem) scale(1);
+    filter: brightness(60%) blur(5px);
+  }
+}
+
+// // First, width define the width of specific element while max-width define the maximum size the element is allow to have.
+
+// //  Second, width:100% use the parent's width to calculate current width value whereas
+// max-width:100% use its own original width to calculate the maximum size. So, the image with width:
+// 100% could be larger its original size (scaled base on its parent width). On the other hand, the image
+// with max-width: 100% could be smaller but never be scaled larger its original size (maximum valid width = 100% x original width).
+// That's why it's called fluid image.

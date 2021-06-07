@@ -46,8 +46,11 @@ body {
   transition: all 0.2s;
 
   &:hover {
-    transform: skewX(6deg) skewY(3deg) translateY(-1rem);
+    transform: scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+  &--white-bg {
+    color: white;
   }
 }
 
