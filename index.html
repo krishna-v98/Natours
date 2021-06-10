@@ -16,6 +16,28 @@
 </head>
 
 <body>
+
+
+    <div class="navigation">
+
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">MENU</label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="" class="navigation__link">About Natours</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">Your Benefits</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">Popular Tours</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">Stories</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">Book Now</a></li>
+            </ul>
+
+        </nav>
+    </div>
+
     <header class="header">
         <div class="header__logo-box">
             <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -289,6 +311,24 @@
                                 <input type="email" class="form__input" id="email" placeholder="E-Mail" required>
                                 <label for="name" class="form__label">E-Mail</label>
                             </div>
+                            <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input type="radio" name="size" id="small" class="form__radio-input">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Small tour group</label>
+                                </div>
+                                <div class="form__radio-group">
+                                    <input type="radio" name="size" id="large" class="form__radio-input">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Large tour group</label>
+                                </div>
+
+                            </div>
+                            <div class="form__group">
+                                <button class="btn btn--green">Next Step &rarr;</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -297,6 +337,33 @@
 
 
     </main>
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo-green-2x.png" alt="footer logo" class="footer__logo">
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Contact Us</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Careers</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Privacy Policy</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <div class="footer__copyright">
+                    Na batta re naa website vaadithey vaadukunnav gani naa peru koncham cheppa ra show dengaku nuvve
+                    tayaru cheskunnattu chaalu, tayaru cheinodi peru <a href="" class="footer__link">Jonas
+                        Schmedtmann</a> ok na? Gurthu pettuko ra puka
+                    please ra dandam pedthe
+                    &copy;
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
